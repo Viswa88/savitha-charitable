@@ -1,10 +1,10 @@
-
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react-swc";
 import path from "path";
 
-// https://vitejs.dev/config/
+// ✅ Add base path for GitHub Pages
 export default defineConfig(() => ({
+  base: "/savitha-charitable/", // 👈 VERY IMPORTANT
   server: {
     host: "::",
     port: 8080,
